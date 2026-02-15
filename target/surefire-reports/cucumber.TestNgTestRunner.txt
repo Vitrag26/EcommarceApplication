@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.TestNgTestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.97 s <<< FAILURE! -- in cucumber.TestNgTestRunner
+cucumber.TestNgTestRunner.runScenario["Title of your scenario outline", "Error Validation"](1) -- Time elapsed: 7.334 s <<< FAILURE!
+java.lang.AssertionError: expected [Thank you message] but found [Incorrect username ands password]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefination.StepDefinationImp.message_is_displayed(StepDefinationImp.java:68)
+	at ✽."Incorrect username ands password" message is displayed(file:///E:/New%20folder%20(2)/Workspace/SeleniumFrameworkDesgin/src/test/java/cucumber/Errorvalidation.feature:10)
+
+cucumber.TestNgTestRunner.runScenario["positive test in purchasing the order", "Purchase the order from Ecommerce  website"](2) -- Time elapsed: 7.137 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'checkout ZARA COAT 3and submit order' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("checkout ZARA COAT 3and submit order")
+public void checkout_zara_coat_3and_submit_order() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.checkout ZARA COAT 3and submit order(file:///E:/New%20folder%20(2)/Workspace/SeleniumFrameworkDesgin/src/test/java/cucumber/PurchaseOrder.feature:13)
+
